@@ -4,17 +4,35 @@ export default navbar([
   {
     text: "人工智能",
     icon: "robot",
+    prefix: "/AI/",
     children:[
       {
-        text: "总览",
-        icon: "list",
-        link: "/AI/"
+        text: "线性代数",
+        icon: "calculator",
+        link: "math"
       },
       {
         text: "机器学习",
         icon: "laptop-code",
-        link: "/AI/ML/"
+        link: "ML/"
+      },
+      {
+        text: "计算机视觉导论",
+        icon: "eye",
+        link: "CV/"
       }
     ]
   },
+  {
+    text: "其他",
+    icon: "book",
+    prefix: "/Others/",
+    children:[
+      {
+        text: "中外名曲欣赏",
+        icon: "music",
+        link: "Music/"
+      }
+    ]
+  }
 ]);
