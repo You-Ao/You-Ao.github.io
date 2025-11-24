@@ -9,6 +9,9 @@ category:
     - 计算机视觉
 ---
 
+:::warning 未完成
+:::
+
 ## Structure from motion (运动恢复结构)
 
 ### 概念
