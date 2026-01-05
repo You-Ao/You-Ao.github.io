@@ -9,9 +9,6 @@ category:
     - 计算机视觉
 ---
 
-:::warning 未完成
-:::
-
 ## 线性代数 Linear Algebra
 
 ### 线性变换的几何意义
