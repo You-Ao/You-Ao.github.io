@@ -24,7 +24,7 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "MIT License | Copyright © 2025 You-Ao",
+  footer: "MIT License | Copyright © 2025-2026 You-Ao",
   displayFooter: true,
 
   // 加密配置
@@ -85,7 +85,7 @@ export default hopeTheme({
     // 取消注释它们如果你需要 TeX 支持
     math: {
     //   // 启用前安装 katex
-    //   type: "katex",
+      // type: "katex",
       // 或者安装 mathjax-full
       type: "mathjax",
     },

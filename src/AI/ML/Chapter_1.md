@@ -117,7 +117,7 @@ category:
 对于上述数据集，若学习的目标是“好瓜”，则可将假设空间表示为：
 
 $$
-{好瓜} \leftrightarrow (色泽 = ?) \land (根蒂 = ?) \land (敲声 = ?)
+{\text{好瓜}} \leftrightarrow (\text{色泽} = ?) \land (\text{根蒂} = ?) \land (\text{敲声} = ?)
 $$
 
 当“色泽”“根蒂”“敲声”分别有3、2、2种可能取值，则该假设空间的规模大小为 $4 \times 3 \times 3 + 1 = 37$
