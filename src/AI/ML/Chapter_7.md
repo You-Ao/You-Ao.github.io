@@ -62,14 +62,14 @@ $$
 寻找判定准则 $h$ 以总体风险，即相当于在**每个样本**上选择能使条件风险最小的类别标记
 
 $$
-h^{*}(x) = argmin_{c \in \mathbf{Y}}R(c | x)
+h^{*}(x) = \mathop{\arg\min}_{c \in \mathbf{Y}} \; R(c | x)
 $$
 
 注：$\mathbf{Y}$ 为所有类别标记的集合
 
 $h^{*}$ 为**贝叶斯最优分类器**，其对应的总体风险 $R(h^{*})$ 为**贝叶斯风险**，$1 - R(h^{*})$ 表示分类器所能达到的最好性能，即通过机器学习所能产生的模型精度的**理论上限**
 
-若目标为最小化分类错误率，则误判损失 $\lambda_{ij}$ 可写为：$\lambda_{ij} = 0$ if $i = j$ otherwise 1，此时的条件风险可表示为：
+若目标为最小化分类错误率，则误判损失 $\lambda_{ij}$ 可写为：$\lambda_{ij} = 0 \; \mathop{if} \; i = j \; \mathop{otherwise} \; 1$，此时的条件风险可表示为：
 
 $$
 R(c | x) = 1 - P(c | x)
@@ -78,7 +78,7 @@ $$
 因此，最小化分类错误率的贝叶斯最优分类器为：
 
 $$
-h^*(x) = argmax_{c \in \mathbf{Y}}P(c | x)
+h^*(x) = \mathop{\arg\max}_{c \in \mathbf{Y}} \; P(c | x)
 $$
 
 即对每个样本 $x$ 都选择使其后验概率最大的类别标记
@@ -128,7 +128,7 @@ $$
 $\theta_c$ 的极大似然估计可表示为：
 
 $$
-\hat{\theta}_c = argmax_{\theta_c} LL(\theta_c)
+\hat{\theta}_c = \mathop{\arg\max}_{\theta_c} \; LL(\theta_c)
 $$
 
 若假设 $P(x | c)$ 符合正态分布(高维)，则对正态分布的均值 $\mu$ 和方差 $\sigma^2$ 的极大似然估计为：
@@ -169,13 +169,13 @@ $d$ 为属性数目，$x_i$ 为 x 在第 i 个属性上的取值
 根据贝叶斯判定准则：
 
 $$
-h^*(x) = argmax_{c \in y} P(c | x) = argmax_{c \in y} \frac{P(c)}{P(x)}\prod_{i = 1}^{d}P(x_i | c)
+h^*(x) = \mathop{\arg\max}_{c \in y} \; P(c | x) = \mathop{\arg\max}_{c \in y} \; \frac{P(c)}{P(x)}\prod_{i = 1}^{d}P(x_i | c)
 $$
 
 对于所有类别来说，分母 $P(x)$ 都是相同的，所以在比较大小时可以忽略：
 
 $$
-h_{nb}(x) = argmax_{c \in y} P(c) \prod_{i = 1}^{d} P(x_i | c)
+h_{nb}(x) = \mathop{\arg\max}_{c \in y} \; P(c) \prod_{i = 1}^{d} P(x_i | c)
 $$
 
 估计 $P(c)$:
