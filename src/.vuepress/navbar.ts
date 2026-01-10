@@ -24,6 +24,17 @@ export default navbar([
     ]
   },
   {
+    text: "思政",
+    icon: "star",
+    prefix: "/Iap/",
+    children:[
+      {
+        text: "毛概",
+        link: "mao/"
+      }
+    ]
+  },
+  {
     text: "其他",
     icon: "book",
     prefix: "/Others/",

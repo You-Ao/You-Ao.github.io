@@ -25,6 +25,16 @@ export default sidebar({
       children: "structure"
     },
   ],
+  "/Iap/": [
+    "",
+    {
+      text: "毛概",
+      prefix: "mao/",
+      link: "mao/",
+      collapsible: true,
+      children: "structure"
+    }
+  ],
   "/Others/": [
     "",
     {
