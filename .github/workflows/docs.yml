@@ -21,6 +21,10 @@ jobs:
           python-version: 3.x
       - run: pip install zensical
       - run: zensical build --clean
+      
+      # 强制关闭 Jekyll，防止隐藏文件夹下的 CSS/JS 被屏蔽
+      - run: touch site/.nojekyll 
+      
       - uses: actions/upload-pages-artifact@v4
         with:
           path: site
